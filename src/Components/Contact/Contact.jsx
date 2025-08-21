@@ -149,7 +149,7 @@ function Contact() {
               <h3 className="  lg:text-5xl  text-heading font-family-Dancing Script text-center text-2xl sm:text-3xl font-semibold mb-4 md:text-left ">
                 Get In Touch
               </h3>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl font-thin max-w-[90%] lg:max-w-[40rem] tracking-wider text-light/80 mt-3 text-center md:text-left text-paragraph">
+              <p className="text-paragraph font-thin text-sm text-sbase sm:text-lg md:text-xl">
                 I'd like to hear from you!
               </p>
             </div>
@@ -157,7 +157,7 @@ function Contact() {
             <div className="text-center md:text-left">
               <p
                 ref={paraRef1}
-                className="text-paragraph font-thin text-base sm:text-lg md:text-xl"
+                className="text-paragraph font-thin text-sm text-sbase sm:text-lg md:text-xl"
               >
                 If you have any inquiries or just want to say hi, please use the
                 contact form!

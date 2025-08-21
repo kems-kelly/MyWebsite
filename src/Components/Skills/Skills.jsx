@@ -92,7 +92,7 @@ function Skills() {
                 delay: 0.3,
                 duration: 1.3,
               }}
-              className="bg-[var(--card-bgs)] p-6 rounded-[var(--card-radius)] shadow-[var(--card-shadow)] hover:shadow-xl transition-shadow duration-300 border border-border w-80 md:w-96 sm:w-full  overflow-hidden "
+              className="bg-[var(--card-bgs)] p-6 rounded-[var(--card-radius)] shadow-[var(--card-shadow)] hover:shadow-xl transition-shadow duration-300 border border-border w-100 md:w-96 sm:w-full  overflow-hidden "
             >
               <h1 className="text-3xl font-bold text-accent mb-2 ">01.</h1>
               <h2 className="text-xl font-semibold mb-3">Responsive Design</h2>
