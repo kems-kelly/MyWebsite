@@ -28,7 +28,7 @@ export default function Nav() {
   ];
 
   return (
-    <nav className=" p-px-nav-px sm:px-container-px flex flex-row mt-8 gap-2 relative-6 w-full rounded-full bg-secondary text-white z-50 justify-between items-center px-nav-px">
+    <nav className=" p-px-nav-px sm:px-container-px flex flex-row  gap-2 relative-6 w-full rounded-full bg-secondary text-white z-50 justify-between items-center px-nav-px">
       {/* Logo */}
       <motion.div
         initial={{ opacity: 0, x: -100 }}
@@ -40,7 +40,7 @@ export default function Nav() {
           delay: 0.3,
           duration: 1.2,
         }}
-        className="flex items-center py-nav-py px-nav-px"
+        className="flex items-center py-nav-py pl-2"
       >
         <div className="h-10 w-10 rounded-xl bg-gradient-to-b from-primary to-heading flex items-center justify-center text-white font-bold text-xl mr-3">
           EK
@@ -51,7 +51,7 @@ export default function Nav() {
       </motion.div>
 
       {/* Desktop Nav */}
-      <div className="hidden md:flex gap-6 px-nav-px">
+      <div className="hidden md:flex gap-6 pr-4">
         {links.map((link, index) => (
           <motion.a
             key={link.id}
@@ -74,7 +74,16 @@ export default function Nav() {
       </div>
 
       {/* Mobile Menu Button */}
-      <button
+      <motion.button
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{
+          type: "spring",
+          stiffness: 100,
+          damping: 25,
+          delay: 0.3,
+          duration: 1.2,
+        }}
         className="md:hidden p-2 rounded-lg bg-primary/10"
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle menu"
@@ -84,7 +93,7 @@ export default function Nav() {
         ) : (
           <IoMenuOutline className="text-link hover:text-link-hover h-7 w-7" />
         )}
-      </button>
+      </motion.button>
 
       {/* Mobile Nav */}
       {isOpen && (

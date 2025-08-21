@@ -143,10 +143,10 @@ function Contact() {
           {/* Left Section */}
           <div
             ref={contactRef}
-            className="py-container-px-lg flex flex-col gap-6  w-full md:w-1/2"
+            className="py-container-px-lg flex flex-col gap-6 items-baseline w-full md:w-1/2"
           >
             <div ref={titleRef}>
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-heading font-family-Dancing Script text-center md:text-left">
+              <h3 className="  lg:text-5xl  text-heading font-family-Dancing Script text-center text-2xl sm:text-3xl font-semibold mb-4 md:text-left ">
                 Get In Touch
               </h3>
               <p className="text-sm sm:text-base md:text-lg lg:text-xl font-thin max-w-[90%] lg:max-w-[40rem] tracking-wider text-light/80 mt-3 text-center md:text-left text-paragraph">
@@ -227,12 +227,13 @@ function Contact() {
             ref={formRef}
             className="py-container-py-lg px-container-px-lg w-full md:w-1/2 bg-card rounded-2xl"
           >
-            <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-center md:text-left text-heading">
+            <h2 className="lg:text-5xl  text-heading font-family-Dancing Script text-center text-2xl sm:text-3xl font-semibold mb-4 md:text-left">
               Contact Me
             </h2>
             <form
               ref={form}
-              className="w-full space-y-4 md:w-full"
+              className="w-full max-w-md sm:max-w-lg md:max-w-2xl 
+             mx-auto space-y-4 px-4 sm:px-6 md:px-8"
               onSubmit={sendEmail}
             >
               <div>

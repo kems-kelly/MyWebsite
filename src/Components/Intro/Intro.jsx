@@ -4,7 +4,12 @@ import { motion } from "framer-motion";
 function Intro() {
   return (
     <section className="py-section-py px-section-px">
-      <div className="max-w-[var(--container-max)] mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 px-10 py-10">
+      <div
+        className="w-full max-w-[95%] sm:max-w-[90%] md:max-w-[85%] lg:max-w-[var(--container-max)] 
+               mx-auto flex flex-col-reverse lg:flex-row items-center justify-between
+               gap-8 sm:gap-10 md:gap-12 lg:gap-16
+               px-4 sm:px-6 md:px-8 lg:px-12 py-6 sm:py-8 md:py-10"
+      >
         {/* Text */}
         <div className="flex flex-col gap-6">
           <div className="flex-1">
@@ -32,7 +37,8 @@ function Intro() {
                 delay: 1.6,
                 duration: 1.5,
               }}
-              className="text-xl md:text-1x1 lg:text-2xl text-paragraph max-w-2xl"
+              className=" text-base sm:text-lg md:text-xl lg:text-2xl 
+             text-paragraph max-w-full md:max-w-2xl text-start md:text-left px-4"
             >
               UX/UI Designer & Front-End Developer skilled in Webflow, React,
               Next.js, and Figma — creating digital products people love
@@ -53,7 +59,7 @@ function Intro() {
               className="bg-gradient-to-b from-primary to-heading
              hover:from-heading hover:to-primary 
              text-sm md:text-base lg:text-lg 
-             py-2 px-4 md:py-4 md:px-6 lg:py-5 lg:px-8 
+             py-3 px-4 md:py-4 md:px-6 lg:py-5 lg:px-8 
              rounded-xl md:rounded-2xl
              transition-all duration-300 ease-in-out  text-white border-0 font-bold cursor-pointer"
             >
@@ -84,7 +90,7 @@ function Intro() {
             }}
             src={image}
             alt="my profile"
-            className="border-10 border-primary rounded-full shadow-2xl "
+            className="w-full h-auto max-h-[40rem] border-10 border-primary rounded-full shadow-2xl"
           />
         </div>
       </div>

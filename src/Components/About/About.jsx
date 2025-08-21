@@ -127,7 +127,11 @@ function AboutUs() {
       className="py-section-py px-section-px"
     >
       {/* Content */}
-      <div className="max-w-[var(--container-max)] mx-auto flex flex-col items-center justify-center gap-2 ">
+      <div
+        className="w-full 
+               max-w-[95%] sm:max-w-[90%] md:max-w-[85%] lg:max-w-[var(--container-max)] 
+               mx-auto flex flex-col items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-12 "
+      >
         <h2
           ref={titleRef}
           className="text-4xl md:text-5xl lg:text-6xl  font-thin text-center text-heading opacity-0"
@@ -146,7 +150,7 @@ function AboutUs() {
           {/* Image */}
           <div ref={imageRef} className="w-full max-w-md">
             <img
-              className="w-full h-auto max-h-[40rem] object-contain mix-blend-multiply"
+              className="w-full h-auto max-h-[40rem] object-contain mix-blend-multiply mt-8"
               src={myImage}
               alt="Ema Kelechi"
             />
@@ -177,7 +181,7 @@ function AboutUs() {
                 className="text-sm md:text-base lg:text-lg 
              text-white bg-primary hover:bg-primary-hover 
              transition-colors duration-300 
-             py-2 px-4 md:py-4 md:px-6 lg:py-5 lg:px-8 
+             py-3 px-4 md:py-4 md:px-6 lg:py-5 lg:px-8 
              rounded-xl md:rounded-2xl"
               >
                 View My CV
