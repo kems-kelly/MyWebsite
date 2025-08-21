@@ -1,19 +1,7 @@
-// import React from "react";
-
-// function About() {
-//   return (
-//     <section className="py-section-py px-section-px ">
-//       <div className="max-w-[var(--container-max)] mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 px-10 py-10"></div>
-//     </section>
-//   );
-// }
-
-// export default About;
-
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import myImage from "../../assets/images/img.png";
+import myImage from "../../assets/Images/img.png";
 
 function AboutUs() {
   const sectionRef = useRef(null);

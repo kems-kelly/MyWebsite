@@ -101,7 +101,7 @@ export default function Nav() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="absolute top-30 left-0 w-full bg-secondary text-link flex flex-col items-center gap-6 py-6 md:hidden z-50 rounded-2xl"
+          className="absolute top-24 left-0 w-full bg-secondary text-link flex flex-col items-center gap-6 py-6 md:hidden z-50 rounded-2xl"
         >
           {links.map((link) => (
             <a
