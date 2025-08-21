@@ -8,7 +8,7 @@ function Footer() {
       id="footer"
       className="bg-footer-bg  text-white py-section-py px-section-px"
     >
-      <div className="max-w-6xl mx-auto py-container-py-lg">
+      <div className="max-w-[var(--container-max)] mx-auto  py-container-py-lg">
         {/* Top Section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Logo */}

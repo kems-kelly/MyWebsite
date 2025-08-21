@@ -138,7 +138,7 @@ function Contact() {
       className=" py-section-py
     px-section-px mt-12"
     >
-      <div className="py-container-py px-container-px flex xl:flex-row flex-col-reverse items-center justify-between gap-12">
+      <div className="max-w-[var(--container-max)] mx-auto  flex xl:flex-row flex-col-reverse items-center justify-between gap-12">
         <div className="flex flex-col lg:flex-row  gap-10 w-full">
           {/* Left Section */}
           <div
