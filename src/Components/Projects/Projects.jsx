@@ -158,7 +158,7 @@ function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div className="flex flex-wrap justify-center gap-6 p-6">
+        <div className="flex flex-wrap justify-center gap-6 ">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}

@@ -232,8 +232,8 @@ function Contact() {
             </h2>
             <form
               ref={form}
-              className="w-full max-w-md sm:max-w-lg md:max-w-2xl 
-             mx-auto space-y-4 px-4 sm:px-6 md:px-8"
+              className="w-full  
+             mx-auto space-y-4 "
               onSubmit={sendEmail}
             >
               <div>
